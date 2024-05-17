@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/Atlogo.jpg">
+    <link rel="stylesheet" href="/css/SignUpPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-dVXBV1ouKrlv9fPoU4K6Dk3rOv8AhrFOpi2juGk8X0s63PMAntQvOv9qfmKiuOeW" crossorigin="anonymous">
+    <title>Attire Aura - Sign Up</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="Logo" onclick="Landing()">
+                <img src="/images/Atlogo.jpg" alt="Logo">
+                <h1>Attire Aura</h1>
+            </div>
+            <section id="one">
+                <div id="menu">
+                    <ul>
+                        <li><a href="/LandingPage.html">Home</a>
+                        </li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="/AdminPage.html">Admin Login</a></li>
+                    </ul>
+                </div>
+                <div id="icon">
+                    <i class="fa-solid fa-circle-chevron-down"></i>
+                </div>
+                <div id="menuList">
+                    <li><a href="/LandingPage.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="/AdminPage.html">Admin Login</a></li>
+                </div>
+                <div id="overlay"></div>
+            </section>
+        </nav>
+    </header>
+    <div id="choice">
+        <button id="b1" onclick=flipContainer() class="button">Login</button>
+        <button id="b2" class="button">Sign Up</button>
+    </div>
+    <section id="two">
+        <div class="container">
+            <div id="con1" class="inner">
+                <img src="/images/BgLogin.png" alt="">
+            </div>
+            <div id="con2" class="inner">
+                <form id="form">
+                    <h1>Welcome!</h1>
+                    <p id="invalid" class="errors">Email or Phone already exists.</p>
+                    <label for="firstName"></label>
+                    <input required id="firstName" name="firstName" type="text" placeholder="First Name*">
+                    <p id="validFName" class="errors">Please enter a valid first name.</p>
+                    <label for="lastName"></label>
+                    <input required id="lastName" name="lastName" type="text" placeholder="Last Name*">
+                    <p id="validLName" class="errors">Please enter a valid last name.</p>
+                    <label for="email"></label>
+                    <input required id="email" name="email" type="email" placeholder="E-mail*">
+                    <p id="validEmail" class="errors">Please enter a valid email address.</p>
+                    <label for="phone"></label>
+                    <input required id="phone" name="phone" type="phone" placeholder="Phone*">
+                    <p id="validPhone" class="errors">Please enter a valid phone number.</p>
+                    <label for="password"></label>
+                    <input required id="password" name="password" type="password" placeholder="Password*">
+                    <p id="validPassword" class="errors">Password must be greater than 8 characters.</p>
+                    <label for="confirm"></label>
+                    <input required id="confirm" name="confirm" type="password" placeholder="Confirm Password*">
+                    <p id="validConfPassword" class="errors">Passwords do not match.</p>
+                    <div class="show">
+                        <i id="chk1" class="fa fa-regular fa-square" style="color: black;"></i>
+                        <i id="chk2" class="fa fa-regular fa-square-check" style="color: black;"></i>
+                        <p>Show Password</p>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer style="color: #9c9b9b;">
+        Made with <i style="color: red;" class="fa fa-heart"></i> By Mirza Sarim
+    </footer>
+</body>
+
+<script src="/css/SignUpPage.js"></script>
+
+</html>

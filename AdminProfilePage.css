@@ -1,0 +1,161 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav div img {
+    height: 40px;
+    margin-right: 5px;
+}
+
+#nav div h1 {
+    font-size: 34px;
+    font-family: Comic Sans Ms;
+    width: fit-content;
+}
+
+#nav div:hover {
+    cursor: pointer;
+}
+
+#nav button {
+    border: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    color: white;
+    background-color: green;
+}
+
+#nav button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+#content {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+#tables {
+    border: 1px solid black;
+    height: 120px;
+    width: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 100px;
+    position: absolute;
+}
+
+#tables div {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+}
+#tables div:hover
+{
+    cursor: pointer;
+}
+#tables div h4 {
+    margin: 0;
+    color: white;
+}
+
+#input {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    top: 15%;
+    right: 20%;
+}
+
+#input input {
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    height: 28px;
+    width: 81%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#tableData {
+    height: 75%;
+    width: 75%;
+    margin-top: 20px;
+    margin-left: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+    overflow-y: auto;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#actions {
+    position: absolute;
+    border: 1px solid black;
+    width: 900px;
+    height: 100px;
+    top: 83%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#actions div {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+    
+#second input {
+    width: fit-content;
+    display: none;
+}
